@@ -39,7 +39,7 @@ public class Tempo {
 public class EstruturaCondicionalSwitch {
 
     public static void main(String[] args) {
-        int dia = 3;
+        int dia = Integer.parseInt(args[0]);
         switch (dia) {
             case 1:
                 System.out.println("Domingo");
@@ -68,4 +68,37 @@ public class EstruturaCondicionalSwitch {
         }
     }
 
+}
+
+public class EstruturaRepeticaoWhile {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int numero = -1;
+
+        while (numero != 10) {
+            System.out.print("Informe um número: ");
+            numero = scanner.nextInt();
+
+            if (numero == 10) {
+                System.out.println("Você acertou!");
+            } else {
+                System.out.println("Você errou! :(\nTente novamente!");
+            }
+        }
+        scanner.close();
+    }
+}
+
+public class EstruturaCondicionalIf {
+    public static void main(String[] args) {
+        int resposta = 8;
+        if (resposta == 10) {
+        //Se  a variável  for igual a 10,  a frase a baixo será escrita
+            System.out.println("Você Acertou!");
+        } else {
+        //Se a variável não for igual a 10, a frase a baixo será escrita
+            System.out.println("Você Errou!");
+        }
+
+    }
 }
